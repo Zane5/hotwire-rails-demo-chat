@@ -9,7 +9,7 @@
     <%= link_to 'Back', rooms_path, "data-turbo-frame": "_top" %>
   </p>
 <%end%>
-<div id="message">
+<div id="messages">
   <%= render @room.messages %>
 </div>
 <%= turbo_frame_tag "new_message", src: new_room_message_path(@room), target: "_top"%>
